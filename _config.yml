@@ -1,43 +1,76 @@
-# 网站基本信息
+# Site settings
 title: AMGCube
-email: Info@AMGCube.com
-description: >
-  AMGCube - Limited Space with unlimited Creativity
-baseurl: "" # 线上使用根目录
-url: "https://amgcube.com" # 网站的自定义域名
+email: info@AMGCube.com
+url: https://AMGCube.com
+description: "Limited Space, Unlimited Creativity"
+keywords: "Prefabricated housing,Modular buildings"
+skills: "Builder - Developer - Arkitect"
+meta_author: AMGCube
 
-# SEO 和社交媒体
-keywords: ["装配式建筑", "模块化空间", "AMGCube"]
-twitter_username: "" # 如果没有 Twitter，可留空
-github_username: ""  # 如果没有使用 GitHub 社交功能，可留空
+# Google webmaster tools
+google_verify:
 
-# 主题配置
-theme: minima # 如果使用 minima 主题
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
 
-# 插件
-plugins:
-  - jekyll-feed # 如果需要 RSS 订阅功能，可保留
-  # 如果不需要其他插件，可以清理此部分
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+#contact: static
+contact: disabled
 
-# 构建设置
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: "0056D2" # 主色，亮蓝
+  primary-rgb: "0,86,210" # 主色 RGB 值
+  secondary: "E6E9EF" # 浅灰色，用于背景
+  accent: "FFA500" # 橙色，用于强调元素
+  text-dark: "333333" # 深灰色，用于主文字
+  text-light: "FFFFFF" # 白色，用于深色背景上的文字
+
+# color:
+  #primary: 18bc9c #80B3FF
+  #primary-rgb: "24,288,156" #"128,179,255"
+  #secondary: 2c3e50 #FD6E8A
+  #secondary-dark: 233140 #A2122F
+
+# Footer settings
+footer:
+  copyright: © 2024 AMGCube. All rights reserved.
+  location: Location
+  social: Around the Web
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/amgcube
+  - title: linkedin
+    url: https://linkedin.com/company/amgcube
+  - title: github
+    url: https://github.com/amgcube
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: "AMGCube Headquarters"
+  - line: "Brisbane, QLD, Australia"
+
+# Credits content
+credits: 'AMGCube is committed to modular building innovations.'
+
+# Build settings
 markdown: kramdown
-kramdown:
-  input: GFM # 使用 GitHub 风格的 Markdown
-highlighter: rouge # 高亮显示代码的工具
+permalink: pretty
 
-# 排除构建的文件或目录（Jekyll 自动忽略）
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - node_modules/
-  - vendor/
-
-# 静态资源设置（如果需要自定义）
-assets:
-  css: assets/css/style.css # 样式文件
-  js: assets/js/script.js   # JavaScript 文件
-
-# 自定义变量（可根据需要扩展）
-company_name: AMGCube
-company_mission: >
-  我们致力于通过装配式、模块化建筑技术，为客户创造灵活、高效和经济的空间解决方案。
+#for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ""
