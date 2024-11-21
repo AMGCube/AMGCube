@@ -1,52 +1,39 @@
 # Site settings
 title: AMGCube
 email: info@AMGCube.com
-url: https://AMGCube.com
+url: "" # 本地调试为空字符串，发布时替换为 https://AMGCube.com
 description: "Limited Space, Unlimited Creativity"
 keywords: "Prefabricated housing,Modular buildings"
-skills: "Builder - Developer - Arkitect"
+skills: "Builder - Developer - Architect"
 meta_author: AMGCube
 
 # Google webmaster tools
 google_verify:
-
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
 # Contact form:
-# - static : pass through formspree.io to validate email sending
-# - disqus : replace contact form by disqus thread
-# - comment the line below if you want to stick with the default PHP contact form
-#contact: static
 contact: disabled
 
-# If you use disqus you need disqus shortname
-# https://help.disqus.com/customer/portal/articles/466208
+# Disqus settings
 disqus_shortname: myshortname
 
-# Color settings (hex-codes without the leading hash-tag)
+# Color settings
 color:
   primary: "0056D2" # 主色，亮蓝
-  primary-rgb: "0,86,210" # 主色 RGB 值
-  secondary: "E6E9EF" # 浅灰色，用于背景
-  accent: "FFA500" # 橙色，用于强调元素
-  text-dark: "333333" # 深灰色，用于主文字
-  text-light: "FFFFFF" # 白色，用于深色背景上的文字
-
-# color:
-  #primary: 18bc9c #80B3FF
-  #primary-rgb: "24,288,156" #"128,179,255"
-  #secondary: 2c3e50 #FD6E8A
-  #secondary-dark: 233140 #A2122F
+  primary-rgb: "0,86,210"
+  secondary: "E6E9EF" # 浅灰
+  accent: "FFA500" # 橙色
+  text-dark: "333333" # 深灰
+  text-light: "FFFFFF" # 白色
 
 # Footer settings
 footer:
   copyright: © 2024 AMGCube. All rights reserved.
-  location: Location
+  location: Brisbane, QLD, Australia
   social: Around the Web
-  credits: Credits
+  credits: AMGCube is committed to modular building innovations.
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Social networks
 social:
   - title: twitter
     url: https://twitter.com/amgcube
@@ -55,19 +42,19 @@ social:
   - title: github
     url: https://github.com/amgcube
 
-# Postal address (add as many lines as necessary)
+# Postal address
 address:
   - line: "AMGCube Headquarters"
   - line: "Brisbane, QLD, Australia"
-
-# Credits content
-credits: 'AMGCube is committed to modular building innovations.'
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 
-#for posts
+# Exclude specific files or directories
+exclude: []
+
+# Defaults for posts
 defaults:
   - scope:
       path: ""
